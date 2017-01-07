@@ -1,13 +1,357 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.appbusters.robinkamboj.prdc.Tab3">
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/scrollView"
+        android:padding="4sp">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="* Miles of travel by jet plane annually (1 mrem per 1000 miles) : "
+                android:id="@+id/textView3"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1">
+                <EditText android:id="@+id/input_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Enter number of miles" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Have porcelain crowns or false teeth (0.07 mrem)"
+                    android:id="@+id/checkBox1"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text=" Use gas lantern mantles when camping (0.003 mrem) "
+                    android:id="@+id/checkBox2"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Wear a luminous wristwatch (LCD) (0.006 mrem)"
+                    android:id="@+id/checkBox3"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Use luggage inspection at airports (using typical x-ray machine) (0.002 mrem) "
+                    android:id="@+id/checkBox4"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Watch TV (1 mrem) *** "
+                    android:id="@+id/checkBox5"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Use a video display terminal (1 mrem) *** "
+                    android:id="@+id/checkBox6"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Have a smoke detector (0.008 mrem)"
+                    android:id="@+id/checkBox7"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Wear a plutonium-powered cardiac pacemaker (100 mrem)"
+                    android:id="@+id/checkBox8"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Have had diagnostic x-rays (e.g : upper and lower gastrointestinal, chest) (40 mrem)**"
+                    android:id="@+id/checkBox9"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Have had nuclear medical procedures (e.g., thyroid scans) (14 mrem)**"
+                    android:id="@+id/checkBox10"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Live within 50 miles of a nuclear power plant (pressurized water reactor) (0.0009 mrem)"
+                    android:id="@+id/checkBox11"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:text="Live within 50 miles of a coal-fired electrical utility plant (0.03 mrem)"
+                    android:id="@+id/checkBox12"
+                    android:layout_centerHorizontal="true"
+                    android:checked="false"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
