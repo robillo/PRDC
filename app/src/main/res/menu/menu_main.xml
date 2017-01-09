@@ -15,6 +15,6 @@
     <item
         android:id="@+id/action_refugee_centre"
         android:orderInCategory="102"
-        android:title="@string/action_settings"
+        android:title="Refuge Centres"
         app:showAsAction="never" />
 </menu>
