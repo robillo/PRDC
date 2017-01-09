@@ -85,6 +85,10 @@ public class MainActivity extends AppCompatActivity  {
         else if (id == R.id.action_settings) {
             return true;
         }
+        else if(id == R.id.action_refugee_centre) {
+            Intent i = new Intent(this, RefugeeCentreActivity.class);
+            startActivity(i);
+        }
 
         return super.onOptionsItemSelected(item);
     }

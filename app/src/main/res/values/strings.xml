@@ -23,5 +23,6 @@
         and Radiation has always been all around us as a part of our natural environment.\nIt will be shown that the amount of radiation that we receive from a nuclear power plant is much <b>less</b> than the amount
         of radiation that we receive as a result of cosmic radiation, presence of <b>Radon in air</b>, etc. This will help in reducing irrational fear of nuclear radiation to some extend Indian Public.
     </string>
+    <string name="title_activity_refugee_centre">RefugeeCentreActivity</string>
 
 </resources>

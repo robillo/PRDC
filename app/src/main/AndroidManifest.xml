@@ -22,7 +22,11 @@
             android:name=".GraphActivity"
             android:label="@string/title_activity_graph"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".About"></activity>
+        <activity android:name=".About" />
+        <activity
+            android:name=".RefugeeCentreActivity"
+            android:label="@string/title_activity_refugee_centre"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
