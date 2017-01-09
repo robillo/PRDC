@@ -26,5 +26,6 @@
     <string name="title_activity_refugee_centre">RefugeeCentreActivity</string>
 
     <string name="abc_hub_new_delhi">ABC Hub, Building No. 123, Saket, New Delhi\nContact: (011) 2XXX2233</string>
+    <string name="sign_up"><u>Dont Have an Account? Sugn Up</u></string>
 
 </resources>
